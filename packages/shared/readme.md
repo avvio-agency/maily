@@ -24,10 +24,6 @@ Install `@maily-to/shared` from your command line.
 pnpm add @maily-to/shared
 ```
 
-## Contributions
-
-Feel free to submit pull requests, create issues, or spread the word.
-
 ## License
 
 MIT &copy; Avvio Team

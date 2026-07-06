@@ -280,35 +280,6 @@ import { ImageUploadExtension } from '@maily-to/core/extensions';
 
 See the [@maily-to/render](../render) package for more information on how to render the editor content to HTML.
 
-<br/>
-
-## Sponsors
-
-Sponsorship at any level is appreciated and encouraged. If you built a paid product using Avvio, consider one of the [sponsorship tiers](https://github.com/sponsors/arikchakma).
-
-<br/>
-
-<h3 align="center">Gold</h3>
-
-<table align="center" style="justify-content: center;align-items: center;display: flex;">
-  <tr>
-    <td align="center">
-      <p></p>
-      <p></p>
-      <a href="https://novu.co?ref=avvio.agency">
-        <picture height="60px">
-          <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/5e2b9ef1-5ded-4863-995d-62c7e40f946a">
-          <img alt="Novu Logo" height="60px" src="https://github.com/user-attachments/assets/d2fdaf14-2211-4946-ab67-a4ce547aabc0">
-        </picture>
-      </a>
-      <p></p>
-      <p></p>
-    </td>
-  </tr>
-</table>
-
-<br/>
-
 ## License
 
 MIT &copy; Avvio Team

@@ -108,10 +108,6 @@ maily.setPayloadValue('items', ['Alice', 'Bob', 'Charlie']);
 const html = await maily.render();
 ```
 
-## Contributions
-
-Feel free to submit pull requests, create issues, or spread the word.
-
 ## License
 
 MIT &copy; Avvio Team
