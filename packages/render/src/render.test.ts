@@ -129,14 +129,14 @@ describe('render', () => {
                 {
                   type: 'link',
                   attrs: {
-                    href: 'https://maily.to',
+                    href: 'https://www.avvio.agency',
                     target: '_blank',
                     rel: 'noopener noreferrer nofollow',
                     class: null,
                   },
                 },
               ],
-              text: 'maily.to',
+              text: 'avvio.agency',
             },
           ],
         },
@@ -144,13 +144,13 @@ describe('render', () => {
     };
 
     const maily = new Maily(content);
-    maily.setLinkValue('https://maily.to', 'https://maily.to/playground');
+    maily.setLinkValue('https://www.avvio.agency', 'https://www.avvio.agency');
     const result = await maily.render({
       plainText: true,
     });
 
     expect(result).toMatchInlineSnapshot(
-      `"maily.to https://maily.to/playground"`
+      `"avvio.agency https://www.avvio.agency"`
     );
   });
 
@@ -178,14 +178,14 @@ describe('render', () => {
     const maily = new Maily(content);
     maily.setVariableValue(
       'unsubscribe_url',
-      'https://maily.to/unsubscribe_url'
+      'https://www.avvio.agency/unsubscribe_url'
     );
     const result = await maily.render({
       plainText: true,
     });
 
     expect(result).toMatchInlineSnapshot(
-      `"Unsubscribe https://maily.to/unsubscribe_url"`
+      `"Unsubscribe https://www.avvio.agency/unsubscribe_url"`
     );
   });
 

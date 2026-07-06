@@ -10,8 +10,8 @@ const robots = {
       userAgent: '*',
     },
   ],
-  sitemap: 'https://maily.to/sitemap.xml',
-  host: 'https://maily.to',
+  sitemap: 'https://www.avvio.agency/sitemap.xml',
+  host: 'https://www.avvio.agency',
 };
 
 const robotsTxt = resolveRobots(robots);
@@ -20,8 +20,8 @@ await fs.writeFile(publicPath, robotsTxt);
 console.log(`📄 Generated robots.txt at ${publicPath}`);
 
 console.log('📄 Generating sitemap.xml...');
-const routes = ['', '/playground'].map((route) => ({
-  url: `https://maily.to${route}`,
+const routes = ['', '/editor'].map((route) => ({
+  url: `https://www.avvio.agency${route}`,
   lastModified: new Date().toISOString().split('T')[0],
 }));
 

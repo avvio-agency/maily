@@ -1131,7 +1131,7 @@ export class Maily {
             src={src}
             style={{
               width: logoSizes[size as AllowedLogoSizes] || size,
-              height: logoSizes[size as AllowedLogoSizes] || size,
+              height: 'auto',
             }}
             title={title || alt || 'Logo'}
           />

@@ -1,11 +1,11 @@
-<h1 align="center"><img height="150" src="https://maily.to/brand/icon.svg" /><br> @maily-to/core</h1>
+<h1 align="center"><img height="150" src="https://www.avvio.agency/assets/logo.svg" /><br> @maily-to/core</h1>
 
 <p align="center">
   <a href="https://github.com/arikchakma/maily.to/blob/main/license">
     <img src="https://img.shields.io/badge/License-MIT-222222.svg" />
   </a>
-  <a href="https://maily.to">
-    <img src="https://img.shields.io/badge/%E2%9C%A8-Get%20Editor-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="Get Maily Editor" />
+  <a href="https://www.avvio.agency">
+    <img src="https://img.shields.io/badge/%E2%9C%A8-Get%20Editor-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="Get Avvio Editor" />
   </a>
 </p>
 
@@ -284,7 +284,7 @@ See the [@maily-to/render](../render) package for more information on how to ren
 
 ## Sponsors
 
-Sponsorship at any level is appreciated and encouraged. If you built a paid product using Maily, consider one of the [sponsorship tiers](https://github.com/sponsors/arikchakma).
+Sponsorship at any level is appreciated and encouraged. If you built a paid product using Avvio, consider one of the [sponsorship tiers](https://github.com/sponsors/arikchakma).
 
 <br/>
 
@@ -295,7 +295,7 @@ Sponsorship at any level is appreciated and encouraged. If you built a paid prod
     <td align="center">
       <p></p>
       <p></p>
-      <a href="https://novu.co?ref=maily.to">
+      <a href="https://novu.co?ref=avvio.agency">
         <picture height="60px">
           <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/5e2b9ef1-5ded-4863-995d-62c7e40f946a">
           <img alt="Novu Logo" height="60px" src="https://github.com/user-attachments/assets/d2fdaf14-2211-4946-ab67-a4ce547aabc0">
@@ -311,4 +311,4 @@ Sponsorship at any level is appreciated and encouraged. If you built a paid prod
 
 ## License
 
-MIT &copy; [Arik Chakma](https://twitter.com/imarikchakma)
+MIT &copy; Avvio Team

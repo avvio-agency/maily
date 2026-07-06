@@ -1,0 +1,98 @@
+{
+  "type": "doc",
+  "content": [
+    {
+      "type": "section",
+      "attrs": {
+        "backgroundColor": "#f9fafb",
+        "paddingTop": "48px",
+        "paddingRight": "32px",
+        "paddingBottom": "32px",
+        "paddingLeft": "32px",
+        "borderRadius": 12
+      },
+      "content": [
+        {
+          "type": "heading",
+          "attrs": { "level": 1 },
+          "content": [
+            { "type": "text", "marks": [{ "type": "bold" }], "text": "Thank You" }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            { "type": "text", "text": "We truly appreciate your trust and partnership." }
+          ]
+        }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "lg" } },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Dear [Name]," }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "sm" } },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "On behalf of the entire team at Avvio, thank you for choosing us to bring your vision to life. It was a pleasure working with you to create something we're both proud of." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Your new website is now live and we're confident it will make a lasting impression on your audience." }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "sm" } },
+    {
+      "type": "heading",
+      "attrs": { "level": 3 },
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "What happens next?" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "We'll continue to monitor the site's performance and provide ongoing support. If you ever need updates, new features, or just have a question, we're just an email away." }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "button",
+      "attrs": {
+        "text": "Visit Your Website",
+        "url": "",
+        "alignment": "center",
+        "variant": "filled",
+        "borderRadius": "round",
+        "buttonColor": null,
+        "textColor": null,
+        "paddingTop": null,
+        "paddingRight": null,
+        "paddingBottom": null,
+        "paddingLeft": null
+      }
+    },
+    { "type": "spacer", "attrs": { "height": "lg" } },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "marks": [{ "type": "italic" }], "text": "We'd love to hear your feedback. Leave us a review or share your experience — it helps us improve and helps others find us." }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Warmly," },
+        { "type": "hardBreak" },
+        { "type": "text", "text": "The Avvio Team" }
+      ]
+    }
+  ]
+}

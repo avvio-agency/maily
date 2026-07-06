@@ -133,11 +133,11 @@
     "url": "git+https://github.com/arikchakma/maily.to.git",
     "directory": "packages/core"
   },
-  "author": "Arik Chakma <arikchangma@gmail.com>",
+  "author": "Avvio Team",
   "keywords": [
     "tiptap",
     "wysiwyg",
-    "maily.to",
+    "avvio.agency",
     "editor",
     "react",
     "email"

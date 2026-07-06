@@ -1,8 +1,8 @@
-<div align="center"><img height="150" src="https://maily.to/brand/icon.svg" /></div>
+<div align="center"><img height="150" src="https://www.avvio.agency/assets/logo.svg" /></div>
 <br>
 
 <div align="center"><strong>@maily-to/shared</strong></div>
-<div align="center">Shared utilities for <a href="https://maily.to">Maily</a>.</div>
+<div align="center">Shared utilities for <a href="https://www.avvio.agency">Avvio</a>.</div>
 <br />
 
 <p align="center">
@@ -30,4 +30,4 @@ Feel free to submit pull requests, create issues, or spread the word.
 
 ## License
 
-MIT &copy; [Arik Chakma](https://twitter.com/imarikchakma)
+MIT &copy; Avvio Team

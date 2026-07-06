@@ -1,0 +1,141 @@
+{
+  "type": "doc",
+  "content": [
+    {
+      "type": "section",
+      "attrs": {
+        "backgroundColor": "#0f172a",
+        "paddingTop": "48px",
+        "paddingRight": "32px",
+        "paddingBottom": "48px",
+        "paddingLeft": "32px",
+        "borderRadius": 0
+      },
+      "content": [
+        {
+          "type": "heading",
+          "attrs": { "level": 1 },
+          "content": [
+            { "type": "text", "marks": [{ "type": "bold" }], "text": "We're Live!" }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            { "type": "text", "text": "Introducing our new website and services." }
+          ]
+        },
+        { "type": "spacer", "attrs": { "height": "sm" } },
+        {
+          "type": "button",
+          "attrs": {
+            "text": "Check It Out",
+            "url": "",
+            "alignment": "left",
+            "variant": "filled",
+            "borderRadius": "round",
+            "buttonColor": null,
+            "textColor": null,
+            "paddingTop": null,
+            "paddingRight": null,
+            "paddingBottom": null,
+            "paddingLeft": null
+          }
+        }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "lg" } },
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "A Fresh New Look" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "We've completely redesigned our platform from the ground up. Faster, cleaner, and packed with new features to help you build better digital experiences." }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "heading",
+      "attrs": { "level": 3 },
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "What's new" }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "marks": [{ "type": "bold" }], "text": "Brand new design" }, { "type": "text", "text": " — modern, minimal, and built for speed" }]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "marks": [{ "type": "bold" }], "text": "Improved performance" }, { "type": "text", "text": " — 2x faster page loads across the board" }]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "marks": [{ "type": "bold" }], "text": "New services" }, { "type": "text", "text": " — expanded offerings to better serve you" }]
+            }
+          ]
+        }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    { "type": "horizontalRule" },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "We invite you to explore the new site and see what we've been building. As always, we'd love to hear your feedback." }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "lg" } },
+    {
+      "type": "button",
+      "attrs": {
+        "text": "Explore Now",
+        "url": "",
+        "alignment": "center",
+        "variant": "filled",
+        "borderRadius": "round",
+        "buttonColor": null,
+        "textColor": null,
+        "paddingTop": null,
+        "paddingRight": null,
+        "paddingBottom": null,
+        "paddingLeft": null
+      }
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Thanks for being part of our journey." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "— Avvio" }
+      ]
+    }
+  ]
+}

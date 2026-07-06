@@ -84,10 +84,10 @@ export function PreviewEmailDialog(props: PreviewEmailDialogProps) {
 
           <div className="shadow-xs flex items-start gap-4 rounded-xl border border-gray-200 bg-white p-3">
             <div className="flex size-8 items-center justify-center rounded-full border border-gray-200 bg-white text-sm">
-              AC
+              AT
             </div>
             <div className="flex flex-col gap-0.5">
-              <h3 className="font-medium">Arik Chakma</h3>
+              <h3 className="font-medium">Avvio Team</h3>
               <h4 className="text-sm">{subject || 'Your Subject Goes Here'}</h4>
               <p className="text-sm text-gray-500">
                 {previewText ||

@@ -1,0 +1,127 @@
+{
+  "type": "doc",
+  "content": [
+    {
+      "type": "logo",
+      "attrs": {
+        "src": "https://www.avvio.agency/assets/logo.svg",
+        "alt": null,
+        "title": null,
+        "maily-component": "logo",
+        "size": "sm",
+        "alignment": "left"
+      }
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "heading",
+      "attrs": { "level": 1 },
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "Monthly Update" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "marks": [{ "type": "italic" }], "text": "Tips, insights, and what's new in web development." }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "What's New" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "We've been busy shipping new features and improvements. Here's a quick roundup of what we've been working on this month." }
+      ]
+    },
+    {
+      "type": "image",
+      "attrs": {
+        "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600",
+        "alt": "Dashboard preview",
+        "width": null,
+        "height": null,
+        "alignment": "center",
+        "borderRadius": 8
+      }
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "Tip of the Month" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "Optimize your Core Web Vitals" },
+        { "type": "text", "text": " — Google's Core Web Vitals are more important than ever. Focus on Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS) to improve your search rankings and user experience." }
+      ]
+    },
+    {
+      "type": "blockquote",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            { "type": "text", "text": "\"The best websites load fast, respond instantly, and never jump around.\"" }
+          ]
+        }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "Recent Projects" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "We helped three clients launch redesigned sites this month, resulting in an average " },
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "40% increase in conversion rates" },
+        { "type": "text", "text": ". Want to be next?" }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "button",
+      "attrs": {
+        "text": "Let's Talk",
+        "url": "",
+        "alignment": "center",
+        "variant": "filled",
+        "borderRadius": "round",
+        "buttonColor": null,
+        "textColor": null,
+        "paddingTop": null,
+        "paddingRight": null,
+        "paddingBottom": null,
+        "paddingLeft": null
+      }
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "marks": [{ "type": "italic" }], "text": "Stay tuned for next month's update. If you have questions or topics you'd like us to cover, just reply to this email." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "— Avvio Team" }
+      ]
+    }
+  ]
+}

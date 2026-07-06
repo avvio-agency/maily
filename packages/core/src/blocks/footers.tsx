@@ -46,7 +46,7 @@ export const footerCommunityFeedbackCta: BlockItem = {
         {
           type: 'image',
           attrs: {
-            src: 'https://maily.to/brand/logo.png',
+            src: 'https://www.avvio.agency/assets/logo.svg',
             alt: null,
             title: null,
             width: '42',
@@ -96,7 +96,7 @@ export const footerCompanySignature: BlockItem = {
         {
           type: 'image',
           attrs: {
-            src: 'https://maily.to/brand/logo.png',
+            src: 'https://www.avvio.agency/assets/logo.svg',
             alt: null,
             title: null,
             width: '48',
@@ -112,7 +112,7 @@ export const footerCompanySignature: BlockItem = {
         {
           type: 'heading',
           attrs: { textAlign: 'center', level: 3, showIfKey: null },
-          content: [{ type: 'text', text: 'Maily' }],
+          content: [{ type: 'text', text: 'Avvio' }],
         },
         { type: 'spacer', attrs: { height: 4, showIfKey: null } },
         {
@@ -131,7 +131,7 @@ export const footerCompanySignature: BlockItem = {
                 {
                   type: 'link',
                   attrs: {
-                    href: 'https://maily.to',
+                    href: 'https://www.avvio.agency',
                     target: '_blank',
                     rel: 'noopener noreferrer nofollow',
                     class: 'mly:no-underline',
@@ -154,7 +154,7 @@ export const footerCompanySignature: BlockItem = {
                 {
                   type: 'link',
                   attrs: {
-                    href: 'https://maily.to',
+                    href: 'https://www.avvio.agency',
                     target: '_blank',
                     rel: 'noopener noreferrer nofollow',
                     class: 'mly:no-underline',
@@ -177,7 +177,7 @@ export const footerCompanySignature: BlockItem = {
                 {
                   type: 'link',
                   attrs: {
-                    href: 'https://maily.to',
+                    href: 'https://www.avvio.agency',
                     target: '_blank',
                     rel: 'noopener noreferrer nofollow',
                     class: 'mly:no-underline',

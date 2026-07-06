@@ -1,8 +1,8 @@
-<div align="center"><img height="150" src="https://maily.to/brand/icon.svg" /></div>
+<div align="center"><img height="150" src="https://www.avvio.agency/assets/logo.svg" /></div>
 <br>
 
 <div align="center"><strong>@maily-to/render</strong></div>
-<div align="center">Transform <a href="https://maily.to">Maily</a> content into HTML email templates.</div>
+<div align="center">Transform <a href="https://www.avvio.agency">Avvio</a> content into HTML email templates.</div>
 <br />
 
 <p align="center">
@@ -114,4 +114,4 @@ Feel free to submit pull requests, create issues, or spread the word.
 
 ## License
 
-MIT &copy; [Arik Chakma](https://twitter.com/imarikchakma)
+MIT &copy; Avvio Team

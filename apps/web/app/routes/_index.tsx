@@ -1,7 +1,15 @@
-import { Icons } from '~/components/icons';
 import type { Route } from './+types/_index';
 import { Link } from 'react-router';
-import { ArrowUpRightIcon, StarIcon } from 'lucide-react';
+import {
+  PaintbrushIcon,
+  EyeIcon,
+  CodeIcon,
+  SendIcon,
+  VariableIcon,
+  SmartphoneIcon,
+  MailIcon,
+  ZapIcon,
+} from 'lucide-react';
 
 export function headers(_: Route.HeadersArgs) {
   return {
@@ -10,205 +18,246 @@ export function headers(_: Route.HeadersArgs) {
 }
 
 export default function Home(props: Route.ComponentProps) {
+  const features = [
+    {
+      icon: <PaintbrushIcon className="size-5" />,
+      title: 'Drag-and-drop editor',
+      desc: 'Build emails visually with pre-designed blocks. No coding required.',
+    },
+    {
+      icon: <EyeIcon className="size-5" />,
+      title: 'Live preview',
+      desc: 'See exactly how your email looks before hitting send.',
+    },
+    {
+      icon: <CodeIcon className="size-5" />,
+      title: 'Copy HTML',
+      desc: 'Export clean, responsive HTML that works across all email clients.',
+    },
+    {
+      icon: <SendIcon className="size-5" />,
+      title: 'Send test emails',
+      desc: 'Test your emails with any provider via Resend integration.',
+    },
+    {
+      icon: <VariableIcon className="size-5" />,
+      title: 'Dynamic variables',
+      desc: 'Personalize emails with dynamic content and custom variables.',
+    },
+    {
+      icon: <SmartphoneIcon className="size-5" />,
+      title: 'Mobile-ready',
+      desc: 'Every template is responsive and looks great on any device.',
+    },
+  ];
+
   const components = [
     'Logo',
-    'Buttons and Variants',
-    'Variables',
-    'Text Formatting',
+    'Buttons',
+    'Text',
     'Image',
-    'Alignment',
     'Divider',
     'Spacer',
     'Footer',
     'List',
     'Quote',
-    'Code',
-    'Section',
     'Columns',
     'Repeat',
-    'Show',
-    'Social',
+    'Show / Hide',
+    'Social Links',
+    'Variables',
+    'Code Block',
+    'Section',
   ];
 
-  const comingSoon = ['Video', 'Table', 'Countdown'];
+  const howItWorks = [
+    {
+      step: '01',
+      title: 'Choose a template',
+      desc: 'Start from scratch or use pre-designed components to build your email.',
+    },
+    {
+      step: '02',
+      title: 'Customize with drag & drop',
+      desc: 'Add, remove, and rearrange blocks. Edit text, images, and styles inline.',
+    },
+    {
+      step: '03',
+      title: 'Preview and send',
+      desc: 'Preview your email, send a test, and copy the HTML when you are ready.',
+    },
+  ];
 
   return (
     <>
-      <div className="border-b-8 border-t-8 border-b-black border-t-black">
-        <div className="relative mx-auto max-w-[1050px] px-7 sm:px-10">
-          <div className="flex items-center justify-start gap-4 py-10 md:py-14 lg:py-20">
-            <div className="flex-grow">
-              <h1 className="mb-2 text-6xl font-black sm:text-7xl md:mb-3 md:text-8xl lg:mb-4 lg:text-9xl">
-                maily.to
-              </h1>
-              <p className="text-md md:text-2xl lg:text-3xl">
-                Open-source editor for crafting emails.
-              </p>
-              <div className="mt-4 flex flex-col items-stretch gap-2 sm:flex-row md:mt-8 lg:mt-10">
-                <Link
-                  className="flex min-h-[72px] items-center justify-center gap-3 rounded-xl bg-black px-7 py-3 text-2xl font-medium text-white transition-all hover:bg-red-500 focus:outline-0"
-                  to="/playground"
-                >
-                  <Icons.pencil />
-                  Open Editor
-                </Link>
-
-                <a
-                  className="flex items-center justify-center gap-2 rounded-xl border-4 border-black bg-white px-5 py-3 text-2xl font-medium text-black transition-colors hover:border-red-500 hover:bg-red-500 hover:text-white focus:outline-0"
-                  href="https://github.com/arikchakma/maily.to"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <Icons.github />
-                  <span className="hidden sm:inline-block">View on Github</span>
-                  <span className="sm:hidden">Github</span>
-                </a>
-              </div>
-            </div>
-            <div className="hidden flex-shrink-0 lg:flex">
-              <img
-                alt="Maily Icon"
-                className="h-[240px] w-[240px] lg:h-[270px] lg:w-[270px]"
-                loading="eager"
-                src="/brand/icon.svg"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="border-b-8 border-b-black py-24">
-        <div className="mx-auto max-w-[1050px] px-7">
-          <h2 className="mb-4 text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">
-            Designing Emails is{' '}
-            <span className="text-red-500 line-through">&nbsp;Hard&nbsp;</span>{' '}
-            Easy
-          </h2>
-          <p className="mb-14 text-xl leading-relaxed sm:text-3xl sm:leading-relaxed">
-            Maily is a free and{' '}
-            <span className="rounded-md bg-gray-200 px-2 py-1">
-              open-source editor
-            </span>
-            &nbsp; that makes it hassle-free to craft{' '}
-            <span className="rounded-md bg-gray-200 px-2 py-1">
-              beautiful emails
-            </span>{' '}
-            . It comes with a set of{' '}
-            <span className="rounded-md bg-gray-200 px-2 py-1">
-              pre-built components
-            </span>{' '}
-            and{' '}
-            <span className="rounded-md bg-gray-200 px-2 py-1">
-              opinionated design
-            </span>{' '}
-            that you can use to build your emails.
-          </p>
-
-          <h2 className="mb-4 text-3xl font-bold md:mb-6 md:text-4xl lg:text-6xl">
-            Pre-Designed Components
-          </h2>
-          <p className="mb-9 text-xl leading-relaxed sm:text-3xl sm:leading-relaxed">
-            Here is a list of pre-designed components that you can use to build
-            your emails. We are adding more components as we speak.
-          </p>
-          <ul className="flex flex-wrap gap-2 md:gap-3">
-            {components.map((component) => (
-              <li key={component}>
-                <span className="block rounded-xl border-4 border-black bg-transparent px-4 py-2 text-base font-medium text-black md:px-6 md:py-3 md:text-2xl">
-                  {component}
-                </span>
-              </li>
-            ))}
-
-            {comingSoon.map((component) => (
-              <li key={component}>
-                <span className="relative flex overflow-hidden rounded-xl border-4 border-gray-300 bg-transparent px-4 py-2 pr-12 text-base font-medium text-gray-300 sm:pr-14 md:px-6 md:py-3 md:text-2xl">
-                  {component}
-                  <span className="absolute right-0 top-0 ml-1.5 rounded-bl-xl bg-gray-100 p-1 px-2 pl-3 text-xs text-gray-800">
-                    soon
-                  </span>
-                </span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      <div className="border-b-8 border-b-black py-24">
-        <div className="mx-auto max-w-[1050px] px-7">
-          <h2 className="mb-6 text-4xl font-bold sm:text-6xl">
-            <span className="text-red-400 line-through">
-              &nbsp;So Many&nbsp;
-            </span>{' '}
-            Not Many Stars
-          </h2>
-          <p className="mb-4 text-xl leading-relaxed sm:text-3xl sm:leading-relaxed">
-            I just launched the project —— thus, not many stars.
-          </p>
-          <p className="mb-7 text-xl leading-relaxed sm:text-3xl sm:leading-relaxed">
-            Please do{' '}
-            <a
-              className="underline underline-offset-8 hover:text-red-500"
-              href="https://github.com/arikchakma/maily.to"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              leave a star on GitHub
-            </a>{' '}
-            if you like the project. Also, I would love to hear from you if you
-            have any feedback or suggestions.
-          </p>
-
-          <div className="flex flex-col gap-3 md:flex-row">
-            <a
-              className="inline-flex min-h-[56px] items-center justify-center rounded-lg border-black bg-red-300 px-5 py-2 text-lg font-medium transition-colors hover:bg-red-400 md:text-xl lg:rounded-xl lg:py-4 lg:text-2xl"
-              href="https://github.com/arikchakma/maily.to"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <span className="mr-3 inline-flex items-center">
-                <StarIcon className="mr-1 h-5 w-5 fill-current md:mr-2 md:h-7 md:w-7" />
-                <span className="line-through">&nbsp;100k&nbsp;</span>
-              </span>
-              GitHub Stars
-            </a>
-
+      <header className="border-b border-gray-200">
+        <div className="mx-auto flex max-w-[1050px] items-center justify-between px-7 py-4 sm:px-10">
+          <Link className="flex items-center gap-2" to="/">
+            <img
+              alt="Avvio"
+              className="size-8"
+              src="/brand/avatar-light.png"
+            />
+            <span className="text-xl font-bold tracking-tight">avvio</span>
+          </Link>
+          <nav className="flex items-center gap-4">
             <Link
-              className="flex items-center justify-center gap-2 rounded-lg border-4 border-black bg-white px-5 py-2 text-lg font-medium text-black transition-colors hover:bg-black hover:text-white md:text-xl lg:rounded-xl lg:py-3 lg:text-2xl"
-              to="/playground"
+              className="text-sm font-medium text-gray-600 hover:text-black"
+              to="/editor"
             >
-              <Icons.pencil />
-              Open Editor
+              Editor
             </Link>
+            <Link
+              className="inline-flex items-center rounded-lg bg-black px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-800"
+              to="/editor"
+            >
+              Get Started
+            </Link>
+          </nav>
+        </div>
+      </header>
+
+      <section className="border-b border-gray-200">
+        <div className="mx-auto max-w-[1050px] px-7 py-20 sm:px-10 sm:py-28">
+          <div className="mx-auto max-w-3xl text-center">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-gray-50 px-4 py-1.5 text-sm text-gray-600">
+              <ZapIcon className="size-4 text-amber-500" />
+              Free email builder — no account required
+            </div>
+            <h1 className="mb-6 text-5xl font-black tracking-tight sm:text-6xl lg:text-7xl">
+              Build beautiful emails{' '}
+              <span className="text-amber-500">in minutes</span>
+            </h1>
+            <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-gray-600 sm:text-xl">
+              Avvio is a free, open-source email editor that lets you design,
+              preview, and export responsive emails — no coding or account
+              needed.
+            </p>
+            <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <Link
+                className="inline-flex min-h-[56px] items-center justify-center gap-2 rounded-xl bg-black px-8 text-lg font-medium text-white transition-colors hover:bg-gray-800"
+                to="/editor"
+              >
+                <MailIcon className="size-5" />
+                Open the Editor
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="bg-black py-8 text-white">
+      <section className="border-b border-gray-200 py-20 sm:py-28">
         <div className="mx-auto max-w-[1050px] px-7 sm:px-10">
-          <p className="text-center text-lg text-white">
-            <a
-              className="hidden items-center hover:text-red-300 sm:inline-flex"
-              href="https://github.com/arikchakma/maily.to"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              GitHub
-              <ArrowUpRightIcon className="ml-2 inline-block h-5 text-red-300" />
-            </a>
-            <span className="mx-3 hidden sm:inline-block">·</span>
-            <a
-              className="hidden items-center hover:text-red-300 sm:inline-flex"
-              href="https://twitter.com/imarikchakma"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Twitter
-              <ArrowUpRightIcon className="ml-2 inline-block h-5 text-red-300" />
-            </a>
-          </p>
+          <div className="mx-auto mb-14 max-w-2xl text-center">
+            <h2 className="mb-4 text-3xl font-bold sm:text-4xl">
+              Everything you need to craft the perfect email
+            </h2>
+            <p className="text-lg text-gray-600">
+              A set of powerful features packed into a simple, intuitive
+              interface.
+            </p>
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {features.map((f) => (
+              <div
+                className="rounded-xl border border-gray-200 p-6"
+                key={f.title}
+              >
+                <div className="mb-3 flex size-10 items-center justify-center rounded-lg bg-gray-100 text-gray-700">
+                  {f.icon}
+                </div>
+                <h3 className="mb-1.5 font-semibold">{f.title}</h3>
+                <p className="text-sm leading-relaxed text-gray-600">{f.desc}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section className="border-b border-gray-200 py-20 sm:py-28">
+        <div className="mx-auto max-w-[1050px] px-7 sm:px-10">
+          <div className="mx-auto mb-14 max-w-2xl text-center">
+            <h2 className="mb-4 text-3xl font-bold sm:text-4xl">
+              Pre-designed components
+            </h2>
+            <p className="text-lg text-gray-600">
+              A growing library of components to build any email layout.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center gap-3">
+            {components.map((c) => (
+              <span
+                className="rounded-xl border-2 border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-800"
+                key={c}
+              >
+                {c}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-gray-200 py-20 sm:py-28">
+        <div className="mx-auto max-w-[1050px] px-7 sm:px-10">
+          <div className="mx-auto mb-14 max-w-2xl text-center">
+            <h2 className="mb-4 text-3xl font-bold sm:text-4xl">
+              How it works
+            </h2>
+            <p className="text-lg text-gray-600">
+              Three simple steps to go from blank canvas to sent email.
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-3">
+            {howItWorks.map((item) => (
+              <div className="text-center" key={item.step}>
+                <div className="mx-auto mb-4 flex size-14 items-center justify-center rounded-full bg-gray-100 text-lg font-bold text-gray-700">
+                  {item.step}
+                </div>
+                <h3 className="mb-2 font-semibold">{item.title}</h3>
+                <p className="text-sm leading-relaxed text-gray-600">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-gray-200 bg-gray-50 py-20 sm:py-28">
+        <div className="mx-auto max-w-[1050px] px-7 text-center sm:px-10">
+          <h2 className="mb-4 text-3xl font-bold sm:text-4xl">
+            Ready to build your next email?
+          </h2>
+          <p className="mb-8 text-lg text-gray-600">
+            No sign-ups, no downloads. Just open the editor and start creating.
+          </p>
+          <Link
+            className="inline-flex min-h-[56px] items-center justify-center gap-2 rounded-xl bg-black px-8 text-lg font-medium text-white transition-colors hover:bg-gray-800"
+            to="/editor"
+          >
+            <MailIcon className="size-5" />
+            Open the Editor
+          </Link>
+        </div>
+      </section>
+
+      <footer className="bg-black py-10 text-white">
+        <div className="mx-auto max-w-[1050px] px-7 sm:px-10">
+          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+            <p className="text-sm text-gray-400">
+              &copy; {new Date().getFullYear()} Avvio. All rights reserved.
+            </p>
+            <div className="flex items-center gap-4">
+              <Link
+                className="text-sm text-gray-400 hover:text-white"
+                to="/editor"
+              >
+                Editor
+              </Link>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }

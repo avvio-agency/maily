@@ -30,48 +30,44 @@ export const links: Route.LinksFunction = () => [
   { rel: 'stylesheet', href: stylesheet },
   {
     rel: 'icon',
-    type: 'image/svg+xml',
-    href: '/brand/logo.svg',
-  },
-  {
-    rel: 'icon',
-    href: '/brand/logo.svg',
+    type: 'image/png',
+    href: '/brand/avatar-light.png',
   },
 ];
 
 export const meta: Route.MetaFunction = () => [
-  { title: 'Maily - Open-source editor for crafting emails' },
+  { title: 'Avvio - Open-source editor for crafting emails' },
   {
     name: 'description',
     content:
-      'Craft beautiful emails effortlessly with Maily, the powerful email editor that ensures impeccable communication across all major clients.',
+      'Craft beautiful emails effortlessly with Avvio, the powerful email editor that ensures impeccable communication across all major clients.',
   },
-  { name: 'twitter:creator', content: '@imarikchakma' },
+  { name: 'twitter:creator', content: '@avvio' },
   {
     name: 'twitter:title',
-    content: 'Maily - Open-source editor for crafting emails',
+    content: 'Avvio - Open-source editor for crafting emails',
   },
   { name: 'twitter:card', content: 'summary_large_image' },
   {
     name: 'twitter:description',
     content:
-      'Craft beautiful emails effortlessly with Maily, the powerful email editor that ensures impeccable communication across all major clients.',
+      'Craft beautiful emails effortlessly with Avvio, the powerful email editor that ensures impeccable communication across all major clients.',
   },
-  { name: 'twitter:image', content: 'https://maily.to/og-image.png' },
-  { name: 'og:site_name', content: 'Maily' },
+  { name: 'twitter:image', content: 'https://www.avvio.agency/og-image.png' },
+  { name: 'og:site_name', content: 'Avvio' },
   {
     name: 'og:title',
-    content: 'Maily - Open-source editor for crafting emails',
+    content: 'Avvio - Open-source editor for crafting emails',
   },
   {
     name: 'og:description',
     content:
-      'Craft beautiful emails effortlessly with Maily, the powerful email editor that ensures impeccable communication across all major clients.',
+      'Craft beautiful emails effortlessly with Avvio, the powerful email editor that ensures impeccable communication across all major clients.',
   },
-  { name: 'og:image', content: 'https://maily.to/og-image.png' },
+  { name: 'og:image', content: 'https://www.avvio.agency/og-image.png' },
   { name: 'og:image:width', content: '1200' },
   { name: 'og:image:height', content: '630' },
-  { name: 'og:image:alt', content: 'Maily Preview' },
+  { name: 'og:image:alt', content: 'Avvio Preview' },
   { name: 'theme-color', content: '#ffffff' },
   // Indexing
   { name: 'robots', content: 'index, follow' },

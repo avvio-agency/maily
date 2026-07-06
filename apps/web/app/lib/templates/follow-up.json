@@ -1,0 +1,158 @@
+{
+  "type": "doc",
+  "content": [
+    {
+      "type": "logo",
+      "attrs": {
+        "src": "https://www.avvio.agency/assets/logo.svg",
+        "alt": null,
+        "title": null,
+        "maily-component": "logo",
+        "size": "md",
+        "alignment": "left"
+      }
+    },
+    { "type": "spacer", "attrs": { "height": "lg" } },
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "Great meeting you" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Hi [Name]," }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "sm" } },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Thanks for taking the time to chat with us today. We really enjoyed learning about your project and how we might be able to help." }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "sm" } },
+    {
+      "type": "heading",
+      "attrs": { "level": 3 },
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "Key discussion points" }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Modernizing your existing web presence" }]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Improving page load speed and SEO" }]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Integrating a CMS for easy content updates" }]
+            }
+          ]
+        }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "heading",
+      "attrs": { "level": 3 },
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "Next steps" }
+      ]
+    },
+    {
+      "type": "orderedList",
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "We'll send over a proposal by Friday" }]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Schedule a follow-up call to review" }]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Kick off as soon as you're ready" }]
+            }
+          ]
+        }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "In the meantime, feel free to browse our " },
+        { "type": "text", "marks": [{ "type": "link", "attrs": { "href": "", "target": "_blank" } }], "text": "portfolio" },
+        { "type": "text", "text": " to see similar projects we've delivered." }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "button",
+      "attrs": {
+        "text": "View Our Portfolio",
+        "url": "",
+        "alignment": "left",
+        "variant": "outlined",
+        "borderRadius": "round",
+        "buttonColor": null,
+        "textColor": null,
+        "paddingTop": null,
+        "paddingRight": null,
+        "paddingBottom": null,
+        "paddingLeft": null
+      }
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Looking forward to working together." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Best regards," },
+        { "type": "hardBreak" },
+        { "type": "text", "text": "The Avvio Team" }
+      ]
+    }
+  ]
+}

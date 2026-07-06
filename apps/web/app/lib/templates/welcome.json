@@ -1,0 +1,112 @@
+{
+  "type": "doc",
+  "content": [
+    {
+      "type": "logo",
+      "attrs": {
+        "src": "https://www.avvio.agency/assets/logo.svg",
+        "alt": null,
+        "title": null,
+        "maily-component": "logo",
+        "size": "md",
+        "alignment": "center"
+      }
+    },
+    { "type": "spacer", "attrs": { "height": "lg" } },
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "Welcome aboard!" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Hi there," }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "sm" } },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Thanks for signing up. We're excited to have you on board. At Avvio, we build fast, modern websites and web apps engineered to convert, scale, and last." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Here are a few things you can do to get started:" }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "sm" } },
+    {
+      "type": "bulletList",
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "marks": [{ "type": "bold" }], "text": "Explore our services" }, { "type": "text", "text": " — browse our full range of web development offerings." }]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "marks": [{ "type": "bold" }], "text": "Check out our work" }, { "type": "text", "text": " — see real projects we've delivered for clients." }]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "marks": [{ "type": "bold" }], "text": "Book a call" }, { "type": "text", "text": " — let's discuss your next project." }]
+            }
+          ]
+        }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "button",
+      "attrs": {
+        "text": "Get Started",
+        "url": "",
+        "alignment": "center",
+        "variant": "filled",
+        "borderRadius": "round",
+        "buttonColor": null,
+        "textColor": null,
+        "paddingTop": null,
+        "paddingRight": null,
+        "paddingBottom": null,
+        "paddingLeft": null
+      }
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    { "type": "horizontalRule" },
+    { "type": "spacer", "attrs": { "height": "sm" } },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Questions? Reply to this email or reach out at " },
+        { "type": "text", "marks": [{ "type": "link", "attrs": { "href": "mailto:hello@avvio.agency", "target": "_blank" } }], "text": "hello@avvio.agency" },
+        { "type": "text", "text": "." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Best regards," },
+        { "type": "hardBreak" },
+        { "type": "text", "text": "The Avvio Team" }
+      ]
+    }
+  ]
+}

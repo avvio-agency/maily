@@ -1,4 +1,4 @@
 User-Agent: *
 
-Host: https://maily.to
-Sitemap: https://maily.to/sitemap.xml
+Host: https://www.avvio.agency
+Sitemap: https://www.avvio.agency/sitemap.xml

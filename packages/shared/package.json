@@ -27,9 +27,9 @@
     "url": "git+https://github.com/arikchakma/maily.to.git",
     "directory": "packages/shared"
   },
-  "author": "Arik Chakma <arikchangma@gmail.com>",
+  "author": "Avvio Team",
   "keywords": [
-    "maily.to",
+    "avvio.agency",
     "react",
     "email"
   ],

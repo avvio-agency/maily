@@ -27,7 +27,7 @@ export const headerLogoWithTextHorizontal: BlockItem = {
               {
                 type: 'image',
                 attrs: {
-                  src: 'https://maily.to/brand/logo.png',
+                  src: 'https://www.avvio.agency/assets/logo.svg',
                   alt: null,
                   title: null,
                   width: '32',
@@ -85,7 +85,7 @@ export const headerLogoWithTextVertical: BlockItem = {
         {
           type: 'image',
           attrs: {
-            src: 'https://maily.to/brand/logo.png',
+                  src: 'https://www.avvio.agency/assets/logo.svg',
             alt: null,
             title: null,
             width: '48',
@@ -101,7 +101,7 @@ export const headerLogoWithTextVertical: BlockItem = {
         {
           type: 'heading',
           attrs: { textAlign: 'center', level: 2, showIfKey: null },
-          content: [{ type: 'text', text: 'Maily' }],
+          content: [{ type: 'text', text: 'Avvio' }],
         },
       ])
       .run();
@@ -127,7 +127,7 @@ export const headerLogoWithCoverImage: BlockItem = {
         {
           type: 'image',
           attrs: {
-            src: 'https://maily.to/og-image.png',
+            src: 'https://www.avvio.agency/og-image.png',
             alt: null,
             title: null,
             width: 600,
@@ -154,7 +154,7 @@ export const headerLogoWithCoverImage: BlockItem = {
                 {
                   type: 'image',
                   attrs: {
-                    src: 'https://maily.to/brand/logo.png',
+                    src: 'https://www.avvio.agency/assets/logo.svg',
                     alt: null,
                     title: null,
                     width: '48',

@@ -1,6 +1,7 @@
 import { useMutation, useQuery } from '@tanstack/react-query';
 import type { Editor, FocusPosition } from '@tiptap/core';
 import {
+  Cog,
   FileCogIcon,
   Loader2Icon,
   SaveIcon,
@@ -20,6 +21,8 @@ import { PreviewEmailDialog } from './preview-email-dialog';
 import { PreviewTextInfo } from './preview-text-info';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
+import { TemplatePicker } from './template-picker';
+import type { Template } from '~/lib/templates';
 import defaultEmailJSON from '~/lib/default-editor-json.json';
 import {
   ApiKeyConfigDialog,
@@ -97,9 +100,149 @@ export function EmailEditorSandbox(props: EmailEditorSandboxProps) {
       },
     });
 
+  const hasApiKey = !!apiKeyConfig?.apiKey;
+
   return (
     <>
-      <div className="max-w-[calc(600px+80px)]! mx-auto mb-8 flex items-center justify-between gap-1.5 px-10 pt-5">
+      {!hasApiKey && (
+        <div className="max-w-[calc(600px+80px)]! mx-auto mb-4 mt-4 rounded-lg border border-amber-200 bg-amber-50 px-6 py-4">
+          <h3 className="text-sm font-semibold text-amber-800">
+            Configure to send emails
+          </h3>
+          <ol className="mt-2 list-inside list-decimal text-sm text-amber-700">
+            <li>
+              Create a free account at{' '}
+              <a
+                className="font-medium underline underline-offset-2 hover:text-amber-900"
+                href="https://resend.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                resend.com
+              </a>
+            </li>
+            <li>
+              Go to{' '}
+              <a
+                className="font-medium underline underline-offset-2 hover:text-amber-900"
+                href="https://resend.com/api-keys"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                API Keys
+              </a>{' '}
+              and create an API key
+            </li>
+            <li>
+              Click the gear icon{' '}
+              <Cog className="mx-0.5 inline-block size-4 align-text-top" />{' '}
+              below and paste your API key
+            </li>
+          </ol>
+        </div>
+      )}
+
+      <div className="max-w-[calc(600px+80px)]! mx-auto px-10">
+        <Label className="flex items-center font-normal" data-tour="subject">
+          <span className="w-20 shrink-0 font-normal text-gray-600 after:ml-0.5 after:text-red-400 after:content-['*']">
+            Subject
+          </span>
+          <Input
+            className="h-auto rounded-none border-none py-2.5 font-normal focus-visible:ring-0 focus-visible:ring-offset-0"
+            placeholder="Email Subject"
+            type="text"
+            value={subject}
+            onChange={(event) => setSubject(event.target.value)}
+          />
+        </Label>
+        <div className="flex items-center gap-1.5">
+          <Label className="flex grow items-center font-normal" data-tour="from">
+            <span className="w-20 shrink-0 font-normal text-gray-600">
+              From
+            </span>
+            <Input
+              className="h-auto rounded-none border-none py-2.5 font-normal focus-visible:ring-0 focus-visible:ring-offset-0"
+              placeholder="Avvio Team <hello@avvio.agency>"
+              type="text"
+              value={from}
+              onChange={(event) => setFrom(event.target.value)}
+            />
+          </Label>
+
+          {!showReplyTo && (
+            <button
+              className="inline-block h-full shrink-0 bg-transparent px-1 text-sm text-gray-500 hover:text-gray-700 disabled:cursor-not-allowed disabled:text-gray-400 disabled:opacity-50 disabled:hover:bg-transparent disabled:hover:text-gray-400"
+              type="button"
+              onClick={() => {
+                setShowReplyTo(true);
+              }}
+            >
+              Reply-To
+            </button>
+          )}
+        </div>
+
+        {showReplyTo && (
+          <Label className="flex items-center font-normal">
+            <span className="w-20 shrink-0 font-normal text-gray-600">
+              Reply-To
+            </span>
+            <div className="align-content-stretch flex grow items-center">
+              <Input
+                className="h-auto rounded-none border-none py-2.5 font-normal focus-visible:ring-0 focus-visible:ring-offset-0"
+                placeholder="noreply@avvio.agency"
+                type="text"
+                value={replyTo}
+                onChange={(event) => setReplyTo(event.target.value)}
+              />
+              <button
+                className="flex h-10 shrink-0 items-center bg-transparent px-1 text-gray-500 hover:text-gray-700 disabled:cursor-not-allowed disabled:opacity-50"
+                type="button"
+                onClick={() => {
+                  setReplyTo('');
+                  setShowReplyTo(false);
+                }}
+              >
+                <XIcon className="inline-block size-4" />
+              </button>
+            </div>
+          </Label>
+        )}
+
+        <Label className="flex items-center font-normal" data-tour="to">
+          <span className="w-20 shrink-0 font-normal text-gray-600">To</span>
+          <Input
+            className="h-auto rounded-none border-none py-2.5 font-normal focus-visible:ring-0 focus-visible:ring-offset-0"
+            placeholder="Email Recipient(s)"
+            type="text"
+            value={to}
+            onChange={(event) => setTo(event.target.value)}
+          />
+        </Label>
+
+        <div className="relative my-6" data-tour="preview-text">
+          <Input
+            className="h-auto rounded-none border-x-0 border-gray-300 px-0 py-2.5 pr-5 text-base focus-visible:border-gray-400 focus-visible:ring-0 focus-visible:ring-offset-0"
+            placeholder="Preview Text"
+            type="text"
+            value={previewText}
+            onChange={(event) => setPreviewText(event.target.value)}
+          />
+          <span className="absolute right-0 top-0 flex h-full items-center">
+            <PreviewTextInfo />
+          </span>
+        </div>
+      </div>
+
+      <div data-tour="editor">
+        <EmailEditor
+          defaultContent={template?.content || JSON.stringify(defaultEmailJSON)}
+          setEditor={setEditor}
+          autofocus={autofocus}
+        />
+      </div>
+
+      <div className="max-w-[calc(600px+80px)]! mx-auto mb-8 flex items-center justify-between gap-1.5 px-10 pt-5" data-tour="toolbar">
         <div className="flex items-center gap-1.5">
           <ApiKeyConfigDialog
             apiKey={apiKeyConfig?.apiKey}
@@ -130,6 +273,12 @@ export function EmailEditorSandbox(props: EmailEditorSandboxProps) {
             )}
             Send Email
           </button>
+          <TemplatePicker
+            onSelect={(template) => {
+              setSubject(template.subject);
+              editor?.commands.setContent(template.content);
+            }}
+          />
         </div>
 
         {!template?.id && showSaveButton && (
@@ -223,104 +372,6 @@ export function EmailEditorSandbox(props: EmailEditorSandboxProps) {
           </div>
         )}
       </div>
-
-      <div className="max-w-[calc(600px+80px)]! mx-auto px-10">
-        <Label className="flex items-center font-normal">
-          <span className="w-20 shrink-0 font-normal text-gray-600 after:ml-0.5 after:text-red-400 after:content-['*']">
-            Subject
-          </span>
-          <Input
-            className="h-auto rounded-none border-none py-2.5 font-normal focus-visible:ring-0 focus-visible:ring-offset-0"
-            placeholder="Email Subject"
-            type="text"
-            value={subject}
-            onChange={(event) => setSubject(event.target.value)}
-          />
-        </Label>
-        <div className="flex items-center gap-1.5">
-          <Label className="flex grow items-center font-normal">
-            <span className="w-20 shrink-0 font-normal text-gray-600">
-              From
-            </span>
-            <Input
-              className="h-auto rounded-none border-none py-2.5 font-normal focus-visible:ring-0 focus-visible:ring-offset-0"
-              placeholder="Arik Chakma <hello@maily.to>"
-              type="text"
-              value={from}
-              onChange={(event) => setFrom(event.target.value)}
-            />
-          </Label>
-
-          {!showReplyTo && (
-            <button
-              className="inline-block h-full shrink-0 bg-transparent px-1 text-sm text-gray-500 hover:text-gray-700 disabled:cursor-not-allowed disabled:text-gray-400 disabled:opacity-50 disabled:hover:bg-transparent disabled:hover:text-gray-400"
-              type="button"
-              onClick={() => {
-                setShowReplyTo(true);
-              }}
-            >
-              Reply-To
-            </button>
-          )}
-        </div>
-
-        {showReplyTo && (
-          <Label className="flex items-center font-normal">
-            <span className="w-20 shrink-0 font-normal text-gray-600">
-              Reply-To
-            </span>
-            <div className="align-content-stretch flex grow items-center">
-              <Input
-                className="h-auto rounded-none border-none py-2.5 font-normal focus-visible:ring-0 focus-visible:ring-offset-0"
-                placeholder="noreply@maily.to"
-                type="text"
-                value={replyTo}
-                onChange={(event) => setReplyTo(event.target.value)}
-              />
-              <button
-                className="flex h-10 shrink-0 items-center bg-transparent px-1 text-gray-500 hover:text-gray-700 disabled:cursor-not-allowed disabled:opacity-50"
-                type="button"
-                onClick={() => {
-                  setReplyTo('');
-                  setShowReplyTo(false);
-                }}
-              >
-                <XIcon className="inline-block size-4" />
-              </button>
-            </div>
-          </Label>
-        )}
-
-        <Label className="flex items-center font-normal">
-          <span className="w-20 shrink-0 font-normal text-gray-600">To</span>
-          <Input
-            className="h-auto rounded-none border-none py-2.5 font-normal focus-visible:ring-0 focus-visible:ring-offset-0"
-            placeholder="Email Recipient(s)"
-            type="text"
-            value={to}
-            onChange={(event) => setTo(event.target.value)}
-          />
-        </Label>
-
-        <div className="relative my-6">
-          <Input
-            className="h-auto rounded-none border-x-0 border-gray-300 px-0 py-2.5 pr-5 text-base focus-visible:border-gray-400 focus-visible:ring-0 focus-visible:ring-offset-0"
-            placeholder="Preview Text"
-            type="text"
-            value={previewText}
-            onChange={(event) => setPreviewText(event.target.value)}
-          />
-          <span className="absolute right-0 top-0 flex h-full items-center">
-            <PreviewTextInfo />
-          </span>
-        </div>
-      </div>
-
-      <EmailEditor
-        defaultContent={template?.content || JSON.stringify(defaultEmailJSON)}
-        setEditor={setEditor}
-        autofocus={autofocus}
-      />
     </>
   );
 }

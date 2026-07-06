@@ -1,0 +1,162 @@
+{
+  "type": "doc",
+  "content": [
+    {
+      "type": "section",
+      "attrs": {
+        "backgroundColor": "#1a1a2e",
+        "paddingTop": "48px",
+        "paddingRight": "32px",
+        "paddingBottom": "48px",
+        "paddingLeft": "32px",
+        "borderRadius": 12
+      },
+      "content": [
+        {
+          "type": "heading",
+          "attrs": { "level": 1 },
+          "content": [
+            { "type": "text", "marks": [{ "type": "bold" }], "text": "Launch Your Website in " },
+            { "type": "text", "marks": [{ "type": "bold" }], "text": "2 Weeks" }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            { "type": "text", "text": "A fast, modern website starting at $3,500. No fluff. Just results." }
+          ]
+        },
+        { "type": "spacer", "attrs": { "height": "sm" } },
+        {
+          "type": "button",
+          "attrs": {
+            "text": "Get a Free Quote",
+            "url": "",
+            "alignment": "left",
+            "variant": "filled",
+            "borderRadius": "round",
+            "buttonColor": null,
+            "textColor": null,
+            "paddingTop": null,
+            "paddingRight": null,
+            "paddingBottom": null,
+            "paddingLeft": null
+          }
+        }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "lg" } },
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "What You Get" }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "sm" } },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "Custom Design" },
+        { "type": "text", "text": " — a unique look tailored to your brand." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "Responsive Layout" },
+        { "type": "text", "text": " — looks great on every device." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "SEO Optimized" },
+        { "type": "text", "text": " — built to rank on search engines." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "Fast Delivery" },
+        { "type": "text", "text": " — from kickoff to launch in just 2 weeks." }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    { "type": "horizontalRule" },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [
+        { "type": "text", "marks": [{ "type": "bold" }], "text": "How It Works" }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "sm" } },
+    {
+      "type": "orderedList",
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Tell us about your project" }]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "We create a custom design" }]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Review and provide feedback" }]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Launch your new site" }]
+            }
+          ]
+        }
+      ]
+    },
+    { "type": "spacer", "attrs": { "height": "lg" } },
+    {
+      "type": "button",
+      "attrs": {
+        "text": "Book a Free Consultation",
+        "url": "",
+        "alignment": "center",
+        "variant": "filled",
+        "borderRadius": "round",
+        "buttonColor": null,
+        "textColor": null,
+        "paddingTop": null,
+        "paddingRight": null,
+        "paddingBottom": null,
+        "paddingLeft": null
+      }
+    },
+    { "type": "spacer", "attrs": { "height": "md" } },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "marks": [{ "type": "italic" }], "text": "Limited time offer. Pricing subject to project scope." }
+      ]
+    }
+  ]
+}
