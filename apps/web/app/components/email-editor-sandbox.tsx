@@ -8,7 +8,12 @@ import {
   XIcon,
   AsteriskIcon,
 } from 'lucide-react';
-import { useState } from 'react';
+import {
+  forwardRef,
+  useCallback,
+  useState,
+  useImperativeHandle,
+} from 'react';
 import { useNavigate, useRevalidator } from 'react-router';
 import { toast } from 'sonner';
 import { cn } from '~/lib/classname';
@@ -21,7 +26,6 @@ import { PreviewEmailDialog } from './preview-email-dialog';
 import { PreviewTextInfo } from './preview-text-info';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
-import { TemplatePicker } from './template-picker';
 import type { Template } from '~/lib/templates';
 import defaultEmailJSON from '~/lib/default-editor-json.json';
 import {
@@ -45,7 +49,14 @@ type EmailEditorSandboxProps = {
   autofocus?: FocusPosition;
 };
 
-export function EmailEditorSandbox(props: EmailEditorSandboxProps) {
+export type EmailEditorSandboxHandle = {
+  loadTemplate: (template: Template) => void;
+};
+
+export const EmailEditorSandbox = forwardRef<
+  EmailEditorSandboxHandle,
+  EmailEditorSandboxProps
+>(function EmailEditorSandbox(props, ref) {
   const { template, showSaveButton = true, autofocus } = props;
 
   const navigate = useNavigate();
@@ -60,6 +71,13 @@ export function EmailEditorSandbox(props: EmailEditorSandboxProps) {
   const [showReplyTo, setShowReplyTo] = useState(false);
   const [replyTo, setReplyTo] = useState('');
   const [editor, setEditor] = useState<Editor | null>(null);
+
+  useImperativeHandle(ref, () => ({
+    loadTemplate: (template: Template) => {
+      setSubject(template.subject);
+      editor?.commands.setContent(template.content);
+    },
+  }), [editor]);
 
   const { mutateAsync: updateTemplate, isPending: isUpdateTemplatePending } =
     useMutation({
@@ -273,12 +291,6 @@ export function EmailEditorSandbox(props: EmailEditorSandboxProps) {
             )}
             Send Email
           </button>
-          <TemplatePicker
-            onSelect={(template) => {
-              setSubject(template.subject);
-              editor?.commands.setContent(template.content);
-            }}
-          />
         </div>
 
         {!template?.id && showSaveButton && (
@@ -374,4 +386,4 @@ export function EmailEditorSandbox(props: EmailEditorSandboxProps) {
       </div>
     </>
   );
-}
+});
