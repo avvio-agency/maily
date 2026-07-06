@@ -1,5 +1,4 @@
 {
-  "rootDirectory": "apps/web",
   "buildCommand": "pnpm exec turbo run build --filter=@maily-to/web^... --filter=@maily-to/web",
   "installCommand": "pnpm install"
 }
