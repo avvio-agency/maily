@@ -4,8 +4,6 @@ import { serializeZodError } from '~/lib/errors';
 import { apiConfigCookie } from '~/lib/api-config.server';
 import { json } from '~/lib/response';
 import { render } from '@maily-to/render';
-import { Resend } from 'resend';
-
 export async function action(args: Route.ActionArgs) {
   const { request } = args;
   if (request.method !== 'POST') {
@@ -47,6 +45,7 @@ export async function action(args: Route.ActionArgs) {
     preview: previewText,
   });
 
+  const { Resend } = await import('resend');
   const resend = new Resend(apiKey);
 
   const enrichedTo = Array.isArray(to)
